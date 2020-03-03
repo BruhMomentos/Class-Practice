@@ -1,18 +1,23 @@
+import java.util.ArrayList;
+
 public class Students {
     private String firstname;
     private String lastname;
-    private int id;
-    private int[] courses;
+    private static int number = 1;
+    static private int id;
+    private Courses[] courses;
+
+
 
 
 
     //Constructor
-    Students(int id, String firstname, String lastname, int[] courses){
+    Students(String firstname, String lastname, int id){
         System.out.print("Student Id Card");
-        this.id = id;
         this.firstname = firstname;
         this.lastname = lastname;
-        this.courses = courses;
+        this.id = id;
+
 
     }
     //Methods
@@ -29,6 +34,17 @@ public class Students {
     public void setCourses(){
 
     }
+    public String getname(){ String name = firstname + lastname; return name;}
+
+    public String toString(){
+        String name = getname();
+        return "ID " + id + "| Name: " + name;
+
+    }
+
+
+
+
 
 
 
