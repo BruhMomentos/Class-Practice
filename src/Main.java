@@ -1,7 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-
-        Students students = new Students("Andrea", "Bocelli",  1);
-        System.out.println(students);
+        Student student1 = new Student("Khoa");
+        System.out.println(student1.getId());
     }
 }
